@@ -17,5 +17,6 @@
 .prettierignore
 
 design/
+node_modules/
 style-guide.md
 README-instructions.md
