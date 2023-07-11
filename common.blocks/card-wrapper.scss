@@ -1,0 +1,21 @@
+@import "../library.blocks/breakpoints";
+
+.card-wrapper {
+    align-items: start;
+
+    background: {
+        image: url("../design/mobile-design.jpg");
+        position: center top;
+        repeat: no-repeat;
+    };
+
+    height: 100vh;
+
+    @media screen and (min-width: $desktop) {
+
+        background: {
+            image: url("../design/desktop-design.jpg");
+        };
+
+    };
+}

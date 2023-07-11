@@ -1,0 +1,12 @@
+.card-wrapper {
+  align-items: start;
+  background-image: url("../design/mobile-design.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+@media screen and (min-width: 992px) {
+  .card-wrapper {
+    background-image: url("../design/desktop-design.jpg");
+  }
+}
