@@ -21,9 +21,10 @@ cssTranspile = () => {
         .pipe(dest(common));
 }
 
+// Delete common.card-wrapper.css before submitting
 cssCat = () => {
     return src([lib + "/root.css", lib + "/page.css", lib + "/card-wrapper.css", lib + "/attribution.css"])
-        .pipe(src([common + "/page.css", common + "/card.css", common + "/attribution.css"]))
+        .pipe(src([common + "/page.css", common + "/card-wrapper.css", common + "/card.css", common + "/attribution.css"]))
         .pipe(cat("styles.css"))
         .pipe(dest(dist));
 }

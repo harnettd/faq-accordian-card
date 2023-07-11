@@ -1,0 +1,13 @@
+$font-stack: 'Kumbh Sans', sans-serif;
+
+// font-weights
+$regular: 400;
+$bold: 700;
+
+@mixin font($size, $weight) {
+    font: {
+        family: $font-stack;
+        size: $size;
+        weight: $weight;
+    }
+}

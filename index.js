@@ -1,19 +1,24 @@
 $(document).ready(() => {
 
-    $(".card__question-arrow").on("click", function () {
+    $(".card__arrow").on("click", function () {
+    // Display the answer and flip the arrow
+    
+        const arrow = $(this)
+        const question = arrow.prev(".card__question")
+        const answer = arrow.parent().next(".card__answer")
 
-        // Display the answer and flip the arrow
-        const arrow = $(this);
-        const answer = arrow.parent().next(".card__answer");
-        const displayNone = "card__answer--undisplayed";
-        const rotated = "card__question-arrow--rotated"
+        const arrowSelected = "card__arrow--selected"
+        const questionSelected = "card__question--selected"
+        const answerSelected = "card__answer--selected"
         
-        if (answer.hasClass(displayNone)) {
-            answer.removeClass(displayNone);
-            arrow.addClass(rotated);
+        if (arrow.hasClass(arrowSelected)) {
+            arrow.removeClass(arrowSelected)
+            question.removeClass(questionSelected)
+            answer.removeClass(answerSelected)
         } else {
-            answer.addClass(displayNone);
-            arrow.removeClass(rotated);
+            arrow.addClass(arrowSelected)
+            question.addClass(questionSelected)
+            answer.addClass(answerSelected)
         }
 
     });

@@ -10,6 +10,11 @@
   <title>Frontend Mentor | FAQ Accordion Card</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
     crossorigin="anonymous"></script>
@@ -22,55 +27,64 @@
 <body class="page">
 
   <main class="card-wrapper">
-    <div class="card bordered">
+    <div class="card">
 
-      <div class="card__img-col"></div>
+      <div class="card__img-col">
+        <img class="card__img" src="./images/illustration-woman-online-mobile.svg"
+          alt="illustration of a woman using a computer">
+      </div>
 
       <div class="card__txt-col">
-        <h1 class="header">FAQ</h1>
+        <h1 class="card__header">FAQ</h1>
 
         <div class="card__question-row">
           <div class="card__question">How many team members can I invite?</div>
-          <img class="card__question-arrow" src="images/icon-arrow-down.svg" alt="arrow">
+          <img class="card__arrow" src="images/icon-arrow-down.svg" alt="arrow">
         </div>
-        <p class="card__answer card__answer--undisplayed">You can invite up to 2 additional users on the Free plan. There is no limit on
+        <p class="card__answer">You can invite up to 2 additional users on the Free plan.
+          There is no limit on
           team members for the Premium plan.</p>
 
         <hr class="card__divider">
 
         <div class="card__question-row">
-          <div class="card__question">What is the maximum file upload size?</div>
-          <img class="card__question-arrow" src="images/icon-arrow-down.svg" alt="arrow">
+          <div class="card__question card__question--selected">What is the maximum file upload size?</div>
+          <img class="card__arrow card__arrow--selected" src="images/icon-arrow-down.svg" alt="arrow">
         </div>
-        <p class="card__answer card__answer--undisplayed">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+        <p class="card__answer card__answer--selected">No more than 2GB. All files in your account must fit your
+          allotted storage space.</p>
 
         <hr class="card__divider">
 
         <div class="card__question-row">
           <div class="card__question">How do I reset my password?</div>
-          <img class="card__question-arrow" src="images/icon-arrow-down.svg" alt="arrow">
+          <img class="card__arrow" src="images/icon-arrow-down.svg" alt="arrow">
         </div>
-        <p class="card__answer card__answer--undisplayed">Click “Forgot password” from the login page or “Change password” from your profile page.
+        <p class="card__answer">Click “Forgot password” from the login page or “Change
+          password” from your profile page.
           A reset link will be emailed to you.</p>
 
         <hr class="card__divider">
 
         <div class="card__question-row">
           <div class="card__question">Can I cancel my subscription?</div>
-          <img class="card__question-arrow" src="images/icon-arrow-down.svg" alt="arrow">
+          <img class="card__arrow" src="images/icon-arrow-down.svg" alt="arrow">
         </div>
-        <p class="card__answer card__answer--undisplayed">Yes! Send us a message and we’ll process your request no
+        <p class="card__answer">Yes! Send us a message and we’ll process your request no
           questions asked.</p>
 
         <hr class="card__divider">
 
         <div class="card__question-row">
           <div class="card__question">Do you provide additional support?</div>
-          <img class="card__question-arrow" src="images/icon-arrow-down.svg" alt="arrow">
+          <img class="card__arrow" src="images/icon-arrow-down.svg" alt="arrow">
         </div>
-        <p class="card__answer card__answer--undisplayed">Chat and email support is available 24/7. Phone lines are open during normal business
+        <p class="card__answer">Chat and email support is available 24/7. Phone lines are open
+          during normal business
           hours.</p>
 
+
+        <hr class="card__divider">
       </div>
 
     </div>
